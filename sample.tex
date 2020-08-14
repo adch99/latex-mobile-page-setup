@@ -1,0 +1,145 @@
+\documentclass[12pt]{article}
+
+% Adjust The page size via use of the geometry package
+% Paper is set to 4in by 8in. 
+\usepackage[paperwidth=288pt, paperheight=576,textwidth=248pt,textheight=512]{geometry}
+\usepackage[utf8]{inputenc}
+
+% I prefer to use Open Sans which is a sans serif font.
+% Sans Serif fonts are good for digital documents in general.
+% If you like some other sans serif font, then include it instead
+% or if you'd like to stick with the default, just comment the next
+% line.
+\usepackage[default]{opensans}
+\usepackage[T1]{fontenc}
+
+% Add the rest of your preamble here
+\usepackage{amsmath}
+\usepackage{parskip}
+% etc.
+
+\title{Sample Mobile Document}
+\author{Aditya Chincholi}
+\date{August 2020}
+
+\begin{document}
+% Set all the fonts to sans serif.
+% Comment the next line if you like the LaTeX default font.
+\renewcommand{\familydefault}{\sfdefault}
+
+% Handle overflowing text due to size restriction by
+% hyphenating words
+\sloppy
+
+% Start your document here.
+\maketitle
+\pagebreak
+
+\section{Introduction}
+In this article, we will attempt to showcase how easy it is to
+produce a document in LateX which can be easily read on a phone
+or any handheld device. It is not a surprising fact that most
+people find it hard to read and navigate a LaTeX document when on
+the phone. LaTeX defaults are designed for printed paper and when
+viewed on phone, people run into these issues:
+
+\begin{itemize}
+	\item The large paper size leads to very small font size when
+	the page is viewed as a whole in portrait mode.
+	\item Landscape mode requires that the phone be held horizontally
+	which is usually inconvenient and requires a lot of scrolling.
+	\item Many a times, one has to zoom into a small part of the
+	document and then move horizontally following the line. This
+	makes navigation a headache.
+\end{itemize}
+
+So let's try and produce a version of the document suited for mobile
+viewing perhaps? Reading ought to be easy and natural, the design of
+the document should get out of the way and let us concentrate on the
+content. Hence, I present to you this format. The template.xml file
+included with this, will allow you to easily switch between compiling
+for desktop and mobile viewers. How hard is it to just compile twice
+and put out two files instead of one, if it affords the viewer a
+better experience and correspondingly increases the chances your
+document will be read properly?
+
+Enough talk, let's see some math here.
+
+\begin{align*}
+	\int_{-\inf}^{+\inf} e^{\frac{-x^2}{2}} dx &= \sqrt{2\pi} \\
+	e^{\pi i} + 1 &= 0
+\end{align*}
+
+Even this complicated equation I found by searching 'complicated latex
+formula' on Google.
+
+\begin{align*}
+	S(\omega)
+	&= \frac{\alpha g^2}{\omega^5} e^{[ -0.74\bigl\{\frac{\omega U_\omega 19.5}{g}\bigr\}^{\!-4}\,]} \\
+	&= \frac{\alpha g^2}{\omega^5} \exp\Bigl[ -0.74\Bigl\{\frac{\omega U_\omega 19.5}{g}\Bigr\}^{\!-4}\,\Bigr] 
+\end{align*}
+
+But you might say \textit{"All this sans serif font business is making me feel
+weird. I like the standard LaTeX font."}. Sure! Skip to the next page for that.
+
+\pagebreak
+
+\rmfamily
+
+\section{\textrm{Introduction II}}
+In this article, we will attempt to showcase how easy it is to
+produce a document in LateX which can be easily read on a phone
+or any handheld device. It is not a surprising fact that most
+people find it hard to read and navigate a LaTeX document when on
+the phone. LaTeX defaults are designed for printed paper and when
+viewed on phone, people run into these issues:
+
+\begin{itemize}
+	\item The large paper size leads to very small font size when
+	the page is viewed as a whole in portrait mode.
+	\item Landscape mode requires that the phone be held horizontally
+	which is usually inconvenient and requires a lot of scrolling.
+	\item Many a times, one has to zoom into a small part of the
+	document and then move horizontally following the line. This
+	makes navigation a headache.
+\end{itemize}
+
+So let's try and produce a version of the document suited for mobile
+viewing perhaps? Reading ought to be easy and natural, the design of
+the document should get out of the way and let us concentrate on the
+content. Hence, I present to you this format. The template.xml file
+included with this, will allow you to easily switch between compiling
+for desktop and mobile viewers. How hard is it to just compile twice
+and put out two files instead of one, if it affords the viewer a
+better experience and correspondingly increases the chances your
+document will be read properly?
+
+Enough talk, let's see some math here.
+
+\begin{align*}
+	\int_{-\inf}^{+\inf} e^{\frac{-x^2}{2}} dx &= \sqrt{2\pi} \\
+	e^{\pi i} + 1 &= 0
+\end{align*}
+
+Even this complicated equation I found by searching 'complicated latex
+formula' on Google.
+
+\begin{align*}
+	S(\omega)
+	&= \frac{\alpha g^2}{\omega^5} e^{[ -0.74\bigl\{\frac{\omega U_\omega 19.5}{g}\bigr\}^{\!-4}\,]} \\
+	&= \frac{\alpha g^2}{\omega^5} \exp\Bigl[ -0.74\Bigl\{\frac{\omega U_\omega 19.5}{g}\Bigr\}^{\!-4}\,\Bigr] 
+\end{align*}
+
+\end{document}
+
+% Author: Aditya Chincholi
+% Contact Me for any queries/suggestions at
+% aditya.chincholi@students.iiserpune.ac.in
+% In case you lost the template file, 
+% you can also find this template on GitHub
+% at www.github.com/adch99/
+
+% Inspired by D P Story from acrotex.
+% If you want to experiment, try using 
+%\usepackage[smartphone,useforms]{aeb_mobile}
+% Give http://www.acrotex.net/blog/?p=766 a look.
